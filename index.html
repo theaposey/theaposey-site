@@ -405,7 +405,9 @@ a{color:var(--link)}
 @media (max-width:640px){.road{grid-auto-flow:row;grid-template-columns:1fr;gap:22px;padding-left:30px}.road::before{left:8px;right:auto;top:10px;bottom:10px;border-top:0;border-left:2px dashed var(--ink)}.road li{padding-top:0}.road li>i{left:-30px;top:2px}}
 .origin{display:flex;gap:10px;align-items:baseline;margin:18px 0 0!important;font-size:16px;font-weight:400;line-height:1.5;font-style:italic}
 .origin span{font-style:normal;color:var(--ink);text-shadow:1px 1px 0 var(--pink)}
-.iv-note{margin:0 0 18px!important;font-size:16px;font-weight:300;line-height:1.5;}
+.iv-note{margin:22px 0 8px;padding:16px 20px;background:var(--tint,#F3EEF8);border-radius:14px}
+.iv-note .lbl{margin:0 0 6px!important}
+.iv-note p:last-child{margin:0;font-size:16px;font-weight:300;line-height:1.5}
 .trk-hyp{margin:0 0 20px!important;font-size:16px;font-weight:300;font-style:italic;line-height:1.5;padding-left:14px;border-left:4px solid var(--pink)}
 .trk-ins{margin:0 0 20px!important;font-size:16px;font-weight:300;line-height:1.5;}
 .trk-ins b{font-weight:600}
@@ -990,8 +992,8 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
 
      features:[
        {t:'Instant Resale',partner:'<img class="ft-logo pm" src="logo-poshmark.png" alt="Poshmark">',tag:'Shipped',sum:'One tap creates a complete Poshmark listing. Later scaled to all of Coach.',kpis:[['20k+','items listed'],['+62%','30-day sell-through vs. manual listings'],['New','revenue from resale royalties']],
-        ps:{q:'Only 8% of people resell clothes and accessories they no longer use.',qs:'Taking photos and writing listings was the blocker.',m:[['Instant Resale via the DPP','Tap Resell in the passport and a prefilled Poshmark listing opens. Just set a price.'],['Scaled to all of Coach','A Resell button in order history brings it to every Coach product.']]},
-        parts:[['Instant Resale via the DPP','stepsDpp','Coachtopia: tap the bag, list in seconds'],['Scaled to all of Coach','stepsCoach','Coach: resell straight from order history']]
+        ps:{q:'Only 8% of people resell clothes and accessories they no longer use.',qs:'Taking photos and writing listings was the blocker.',m:[['Instant Resale via the DPP','Tap Resell in the passport and a prefilled Poshmark listing opens. Just set a price.'],['Scaled to all of Coach via order history','A Resell button in order history brings it to every Coach product.']]},
+        parts:[['Instant Resale via the DPP','stepsDpp',''],['Scaled to all of Coach via order history','stepsCoach','']]
         },
        {t:'Unlocking 2nd Life',partner:'<img class="ft-logo dp" src="logo-depop.png" alt="Depop">',tag:'Shipped',sum:'Following every bag after checkout, and giving restored bags a new life.',
         ps:{q:'Once a bag was sold, we lost track of it.',qs:'No record of resales, repairs or what happened next.',m:[['Track every life','Every repair, takeback, restoration and resale is now logged to the bag’s passport.'],['Sell it again','Restored bags sell on Depop, with their full history attached.']]},
@@ -1010,7 +1012,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
      moves:[['Started from my own habits','Wrote about the hours I spend on an app I can’t even buy from, and what that says about pre-intent shopping.'],
             ['Designed and built it','Took it from idea to a working web app myself, end to end.'],
             ['Shared it in public','Wrote up the build, rough edges and all, on Soft Launch in “A Wishlist App That Doesn’t Suck.”']]},
-    {id:'tepic',title:'TEPIC Flash',tag:'AI · 0→1',color:'yellow',img:'tepic-cover-v2.jpg',csImg:'tepic-impact2.png',csWide:true,csAlt:'The Environmental Impact module on a Coachtopia product page: waste diverted, recycled materials, carbon reduction and CO2e created',imgAlt:'The customer-facing Environmental Impact module, showing waste diverted, recycled materials, carbon reduction and CO2e created, in front of the faded TEPIC Flash dashboard that calculates it',
+    {id:'tepic',title:'TEPIC Flash',tag:'AI · 0→1',color:'yellow',img:'tepic-cover-v3.jpg',csImg:'tepic-impact2.png',csWide:true,csAlt:'The Environmental Impact module on a Coachtopia product page: waste diverted, recycled materials, carbon reduction and CO2e created',imgAlt:'Before and after: the T-EPIC Excel tool, about 3 weeks and 9 steps per drop, next to the TEPIC Flash dashboard, about 3 days and 5 steps',
      line:'I built an AI tool that cuts a drop’s environmental impact calculation from about 3 weeks to about 3 days, and shows the working behind every number.',
      tldr:'I built an AI tool that cuts a drop’s environmental impact calculation from about 3 weeks to about 3 days, and shows the working behind every number.',
      meta:[['Role','Product manager'],['Company','Tapestry'],['Timeline','May 2026 – now'],['Partners','Tapestry ESG, WSP']],
@@ -1050,7 +1052,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
      did:[['Mapped the workflows','I shadowed design and product development through a real collection to map how scraps actually move, and <mark class="kp">identify the bottlenecks</mark>.'],
           ['Prototyped with the users','I used AI to <mark class="kp">rapidly prototype with designers and product developers</mark>, letting them use working flows until it matched how they actually work. That prototype became the requirements I brought to the developers.'],
           ['Defined MVP vs. future state','I <mark class="kp">separated what the MVP needs</mark> to launch (the material bank, design canvas, save states and sign-off) <mark class="kp">from future states</mark> like built-in AI suggestions and image generation.'],
-          ['Worked through the logic with developers','I clearly defined, and worked through with the developers, how a product’s <mark class="kp">save states affect the material bank</mark>, and how material data is managed to follow <mark class="kp">pooling and design rules</mark>. <b>Draft</b> is a sketch, <b>Hold</b> reserves materials without deducting them, and <b>Committed</b> deducts them for real.']],
+          ['Worked through the logic with developers','I clearly defined, and worked through with the developers, how a product’s <mark class="kp">save states affect the material bank</mark>, and how material data is managed to follow <mark class="kp">pooling and design rules</mark>.']],
      roiFirst:true,
      impactLbl:'Expected ROI',
      impactNote:[['Faster production plans','Today, each round between design and product development can take up to 2 weeks per side. The goal is to cut that to days by working in one tool.'],['More efficient scrap usage','More units from every material, with quantities used up completely and no over-allocations reaching production.'],['Visibility into scrap stats','Weekly stats on what arrives and what gets used most and least, replacing manual reports.']],
@@ -1111,7 +1113,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
         '<section class="sec" id="sel"><h2 class="vh">Selected work</h2><div class="cards">'+cards+'</div></section>'+
         ticker('band','About ✧','aria-hidden="true"',12)+
         '<section class="sec ab" id="about-sec"><h2 class="vh">About</h2>'+
-        '<div class="ab-intro"><p class="ab-lead"><b>Product manager and designer.</b> Currently building at Coachtopia and leading international projects at Tapestry.</p>'+
+        '<div class="ab-intro"><p class="ab-lead"><b>Product manager and designer.</b> Currently building at Coachtopia and shaping international projects at Tapestry.</p>'+
         '<p>On my team I’m usually the one pulling the data, sketching the flow in Figma, and prototyping with Claude. I grew up across Southeast Asia, East Asia and Texas 🤠, and now call New York home.</p><p class="ab-contact"><a href="https://www.linkedin.com/in/thea-posey" target="_blank" rel="noopener">LinkedIn ↗</a><a href="Thea-Posey-Resume.pdf" class="resume-dl" target="_blank" rel="noopener">Resume ↗</a></p></div>'+
         '<div class="ab-grid"><div><h3>Experience</h3><ul class="exp"><li><i>2024 – now</i> Associate Product Manager, Coachtopia</li><li><i>2023 – 2024</i> Assistant E-Commerce Manager, Coachtopia</li><li><i>2023</i> Business Insights &amp; Operations Intern, Tapestry</li></ul></div>'+
         '<div><h3>Education</h3><ul class="exp"><li><i>2020 – 2024</i> B.S. Business Analytics, Pace University, Honors College</li><li><i>May 2024 · Honors thesis</i> The Digitization of Luxury Fashion<span class="thesis">Analyzed 14K tweets from the height of the metaverse hype to see how shoppers felt about luxury’s digital bets, why most didn’t stick, and what could.</span></li></ul>'+
@@ -1133,7 +1135,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
         burst('a','href="#writing"','Writing','purple','writing')+
         burst('a','href="#elsewhere"','Elsewhere','yellow','elsewhere')+
         burst('a','href="#contact"','Contact','green','contact')+
-        '</nav><p class="foot">Currently building at Coachtopia and leading international projects at Tapestry.</p></section>';
+        '</nav><p class="foot">Currently building at Coachtopia and shaping international projects at Tapestry.</p></section>';
     },
     work:function(){
       return back()+'<section class="view">'+title('Work','pink')+'<ul class="work-list">'+P.map(function(p){
@@ -1142,7 +1144,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
     },
     about:function(){
       return '<section class="view ab"><h2 class="caps">About</h2>'+
-        '<div class="ab-intro"><p class="ab-lead"><b>Product manager and designer.</b> Currently building at Coachtopia and leading international projects at Tapestry.</p>'+
+        '<div class="ab-intro"><p class="ab-lead"><b>Product manager and designer.</b> Currently building at Coachtopia and shaping international projects at Tapestry.</p>'+
         '<p>On my team I’m usually the one pulling the data, sketching the flow in Figma, and prototyping with Claude. I grew up across Southeast Asia, East Asia and Texas 🤠, and now call New York home.</p><p class="ab-contact"><a href="https://www.linkedin.com/in/thea-posey" target="_blank" rel="noopener">LinkedIn ↗</a><a href="Thea-Posey-Resume.pdf" class="resume-dl" target="_blank" rel="noopener">Resume ↗</a></p></div>'+
         '<div class="ab-grid"><div><h3>Experience</h3><ul class="exp"><li><i>2024 – now</i> Associate Product Manager, Coachtopia</li><li><i>2023 – 2024</i> Assistant E-Commerce Manager, Coachtopia</li><li><i>2023</i> Business Insights &amp; Operations Intern, Tapestry</li></ul></div>'+
         '<div><h3>Education</h3><ul class="exp"><li><i>2020 – 2024</i> B.S. Business Analytics, Pace University, Honors College</li><li><i>May 2024 · Honors thesis</i> The Digitization of Luxury Fashion<span class="thesis">Analyzed 14K tweets from the height of the metaverse hype to see how shoppers felt about luxury’s digital bets, why most didn’t stick, and what could.</span></li></ul>'+
@@ -1206,7 +1208,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
   function ftBody(ft){
     var L=ft.pl||['The problem','What I built'],P=ft.ps;
     var h='<div class="ps2"><div class="ps2-q"><p class="lbl">'+L[0]+'</p><p class="ps2-h">'+P.q+'</p><p class="ps2-s">'+P.qs+'</p></div><div class="ps2-a"><p class="lbl">'+L[1]+'</p><ol>'+P.m.map(function(x,k){return '<li><span class="ps2-n">'+(k+1)+'</span><div><b>'+x[0]+'</b><span>'+x[1]+'</span></div></li>'}).join('')+'</ol></div></div>';
-    if(ft.parts)ft.parts.forEach(function(pt,k){h+='<section class="part"><div class="part-h"><span class="ps2-n">'+(k+1)+'</span><div><b>'+pt[0]+'</b><span>'+pt[2]+'</span></div></div>'+VIZ[pt[1]]()+(pt[3]?'<a class="ft-link" href="'+pt[3][0]+'" target="_blank" rel="noopener">'+pt[3][1]+' ↗</a>':'')+'</section>'});
+    if(ft.parts)ft.parts.forEach(function(pt,k){h+='<section class="part"><div class="part-h"><span class="ps2-n">'+(k+1)+'</span><div><b>'+pt[0]+'</b>'+(pt[2]?'<span>'+pt[2]+'</span>':'')+'</div></div>'+VIZ[pt[1]]()+(pt[3]?'<a class="ft-link" href="'+pt[3][0]+'" target="_blank" rel="noopener">'+pt[3][1]+' ↗</a>':'')+'</section>'});
     if(ft.side){h+='<div class="side-g">'+VIZ[ft.viz]()+roleH(ft)+'</div>';return h}
     if(ft.viz&&VIZ[ft.viz])h+=VIZ[ft.viz]();
     if(ft.link)h+='<a class="ft-link" href="'+ft.link[0]+'" target="_blank" rel="noopener">'+ft.link[1]+' ↗</a>';
@@ -1296,12 +1298,12 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
       return '<div class="fviz"><p class="lbl">Who logs what</p><div class="who">'+r.map(function(x){return '<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join('')+'</div></div>';
     },
     stepsDpp:function(){
-      return '<p class="sg-p iv-note">Because one-tap resale was so new, shoppers weren’t sure where Resell would take them, and we saw drop-off right after the tap. I redesigned the flow several times, adding a short onboarding screen and clearer Resell labeling, to raise listing completion.</p>'+VIZ.steps();
+      return VIZ.steps()+'<div class="iv-note"><p class="lbl">Design decisions</p><p>Because one-tap resale was so new, shoppers weren’t sure where Resell would take them, and we saw drop-off right after the tap. I redesigned the flow several times, adding a short onboarding screen and clearer Resell labeling, to raise listing completion.</p></div>';
     },
     stepsCoach:function(){
-      return '<p class="sg-p iv-note">I also worked out where the Resell button should live in Coach order history, so it’s easy to find on any past order.</p>'+VIZ.steps([['cr-1.jpg','Tap Resell','Right from Coach order history, on any past order.','The Coach order history page on mobile, with a Resell button under a shipped order'],
+      return VIZ.steps([['cr-1.jpg','Tap Resell','Right from Coach order history, on any past order.','The Coach order history page on mobile, with a Resell button under a shipped order'],
               ['cr-2.jpg','Continue to Poshmark','The same quick explainer. Tap Sell Now.','A Poshmark screen titled Ready to Resell for a Tabby Shoulder Bag, with a Sell Now button'],
-              ['cr-3.jpg','List it','Every detail is prefilled. Just set a price.','A Poshmark listing form for the Tabby Shoulder Bag with details already filled in']]);
+              ['cr-3.jpg','List it','Every detail is prefilled. Just set a price.','A Poshmark listing form for the Tabby Shoulder Bag with details already filled in']])+'<div class="iv-note"><p class="lbl">Design decisions</p><p>Resell was first buried inside each order’s View Details page, so anyone who didn’t click through would never see it. I pushed it up to the order history page itself, right under each order, so it’s visible the moment you open your orders.</p></div>';
     },
     steps:function(custom){
       var st=custom||[['rs-0.jpg','Scan the NFC tag','Hold a phone to the bag and the passport link pops up.','An iPhone home screen with a Website NFC Tag notification to open coachtopia.coach.com in Safari'],
