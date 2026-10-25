@@ -943,6 +943,13 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
 .feats>.feat:not(.next):not([open]) summary:hover .ft-x::before{animation:none;background:#7a3fb5}
 @media (prefers-reduced-motion:reduce){.feats>.feat:not(.next) .ft-x::before{animation:none!important}}
 @media (max-width:640px){.feats>.feat:not(.next)[open] .ft-x{display:none!important}}
+
+/* "Currently building Pieces" line under the hero bio */
+.info p.now{margin:18px auto 0!important;padding:0!important;text-align:center;font-size:clamp(15px,1.4vw,18px)!important;font-weight:400!important;line-height:1.4!important;letter-spacing:0!important;max-width:none!important}
+.now a{display:inline-flex;align-items:center;gap:7px;margin-left:4px;padding:4px 12px 4px 6px;font-size:inherit;border:2px solid var(--ink);border-radius:999px;background:var(--paper);color:var(--ink);font-weight:700;text-decoration:none;vertical-align:middle;transition:transform .15s}
+.now a:hover{transform:translateY(-1px)}
+.now a::after{content:"\2197";font-weight:400;margin-left:2px}
+.now img{width:24px;height:24px;object-fit:contain;display:block}
 </style>
 
 <header class="hdr">
@@ -1108,7 +1115,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
       }).join('');
       function sticker(label,color,seed,cls,style){return '<div class="st '+cls+'" style="'+style+'" aria-hidden="true">'+burst('span','',label,color,seed,'stb')+'</div>'}
       return '<section class="info"><div class="lead-wrap"><h1 class="sr">Thea Posey</h1>'+
-        '<p class="bio">I’m a <mark class="hl" style="--c:var(--pink);--d:.4s">product manager</mark> in New York with a <mark class="hl" style="--c:var(--blue);--d:.65s">background in data and an eye for design</mark>. I started at Coachtopia working on digital product passports and enabling resale. Being recognized for <mark class="hl" style="--c:var(--yellow);--d:.9s">building fast with AI</mark> led to an innovation track for our team, and now I’m working on Tapestry’s international strategy, where I use data and research to grow our digital business abroad.</p></div>'+
+        '<p class="bio">I’m a <mark class="hl" style="--c:var(--pink);--d:.4s">product manager</mark> in New York with a <mark class="hl" style="--c:var(--blue);--d:.65s">background in data and an eye for design</mark>. I started at Coachtopia working on digital product passports and enabling resale. Being recognized for <mark class="hl" style="--c:var(--yellow);--d:.9s">building fast with AI</mark> led to an innovation track for our team, and now I’m working on Tapestry’s international strategy, where I use data and research to grow our digital business abroad.</p><p class="now">Currently building <a href="https://savepieces.com" target="_blank" rel="noopener"><img src="pieces-mark.png" alt="">Pieces</a></p></div>'+
         ticker('hint','Selected work ↓','role="button" tabindex="0" data-scroll="sel" aria-label="Scroll to selected work"',8)+'</section>'+
         '<section class="sec" id="sel"><h2 class="vh">Selected work</h2><div class="cards">'+cards+'</div></section>'+
         ticker('band','About ✧','aria-hidden="true"',12)+
