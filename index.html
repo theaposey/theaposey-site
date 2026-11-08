@@ -472,7 +472,7 @@ a{color:var(--link)}
 .ctx p{max-width:none!important}
 .ctx .ctx-p{margin:0!important;font-size:16px;font-weight:300;line-height:1.5}
 .ctx .ctx-l2{margin-top:16px!important;padding-top:14px;border-top:1.5px solid rgba(78,13,134,.2)}
-.did mark.kp{color:inherit;font-weight:500;background:linear-gradient(transparent 50%,var(--pink) 50%,var(--pink) 92%,transparent 92%);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.did mark.kp,.ds mark.kp{color:inherit;font-weight:500;background:linear-gradient(transparent 50%,var(--pink) 50%,var(--pink) 92%,transparent 92%);padding:0 .06em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 .did{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:20px}
 .did>li:not(.did-viz){display:grid;grid-template-columns:34px minmax(0,1fr);gap:12px;align-items:start}
 .did-n{font-family:var(--display);font-weight:800;font-size:24px;line-height:1;text-shadow:2px 2px 0 var(--pink)}
@@ -895,6 +895,223 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
 .part-h .ps2-n{font-size:34px!important;text-shadow:3px 3px 0 var(--pink)}
 .sv-n{width:auto!important;height:auto!important;border:0!important;background:none!important;border-radius:0!important;font-family:var(--display)!important;font-weight:800;font-size:20px!important;text-shadow:2px 2px 0 var(--pink)}
 .sv-n{display:none!important}
+/* TEPIC Flash: the old way wall */
+.oway{margin:40px 0 44px;padding:26px 24px 22px;border-radius:22px;background:#F3EEF8}
+.ow-h .lbl{margin-bottom:6px!important}
+.ow-t{margin:0 0 22px!important;font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-.03em}
+.ow-g{list-style:none;margin:0;padding:0 6px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px 16px}
+.ow-c{position:relative;background:#fff;border:2px solid var(--ink);border-radius:14px;padding:10px 10px 12px;box-shadow:4px 4px 0 var(--ink);transform:rotate(var(--r));transition:transform .25s ease,box-shadow .25s ease}
+.ow-c:hover{transform:rotate(0) translateY(-3px);box-shadow:6px 8px 0 var(--ink);z-index:2}
+.ow-c img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top left;border-radius:8px;border:1.5px solid #D9CDE8;background:#fff}
+.ow-m{display:flex;align-items:center;gap:6px;margin:10px 0 6px}
+.ow-m b{width:24px;height:24px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--caps);font-weight:400;font-size:11px}
+.ow-m i{font-style:normal;font-size:11px;font-weight:600;letter-spacing:.02em;padding:3px 9px;border-radius:999px;white-space:nowrap}
+.ow-c p{margin:0;font-size:13.5px;font-weight:500;line-height:1.3;letter-spacing:-.01em}
+.ow-c p em{font-style:normal;color:#B5482A;font-weight:700}
+.ow-c.hot{border-color:#B5482A;box-shadow:4px 4px 0 #B5482A}
+.ow-c.hot:hover{box-shadow:6px 8px 0 #B5482A}
+.ow-bar{margin:26px 0 0!important;display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;padding:14px 22px;border-radius:14px;background:var(--ink);color:#fff;font-family:var(--display);font-weight:800;font-size:clamp(15px,1.6vw,19px);letter-spacing:-.02em}
+.ow-bar .hot{margin-left:auto;color:var(--yellow)}
+@media (max-width:900px){.ow-g{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.oway{padding:20px 16px 18px;border-radius:16px}.ow-g{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 12px}.ow-c{transform:none;box-shadow:3px 3px 0 var(--ink)}.ow-c p{font-size:12.5px}.ow-bar{padding:12px 16px;gap:6px 18px;font-size:15px}.ow-bar .hot{margin-left:0;flex-basis:100%}}
+/* prototype screens */
+.pst{margin:6px 0 10px}
+.pst .lbl{margin-bottom:12px!important}
+.pst-g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pst-c img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top;border:2px solid var(--ink);border-radius:12px;background:#fff;box-shadow:4px 4px 0 var(--pink)}
+.pst-c b{display:flex;align-items:center;gap:10px;margin:14px 0 4px;font-weight:700;font-size:15px;letter-spacing:-.02em}
+.pst-c b .did-n{font-size:20px}
+.pst-c p{margin:0;font-size:13.5px;font-weight:300;line-height:1.4}
+.pst-q{margin:22px 0 0!important;font-family:var(--display);font-weight:800;font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em;line-height:1.2}
+.pst-q span{display:block;margin-top:4px;font-family:var(--sans);font-weight:300;font-size:14px;letter-spacing:0}
+@media (max-width:640px){.pst-g{grid-template-columns:1fr;gap:18px}}
+/* hitting the wall */
+.wl-wrap2{margin:6px 0 10px;border:2px solid var(--ink);border-radius:18px;overflow:hidden;background:#fff;box-shadow:5px 5px 0 var(--pink)}
+.wl2-h,.wl2-r{display:grid;grid-template-columns:110px minmax(0,1fr) minmax(0,1fr);align-items:center}
+.wl2-h{padding:14px 20px 10px;border-bottom:2px solid var(--ink)}
+.wl2-h .rz-l{margin:0!important}
+.wl2-r{padding:12px 20px}
+.wl2-r+.wl2-r{border-top:1px dashed rgba(78,13,134,.35)}
+.wl2-r:nth-child(even){background:#F9F6FC}
+.wl2-l{font-family:var(--caps);font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.wl2-a,.wl2-b{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.4vw,28px);letter-spacing:-.03em;line-height:1.05}
+.wl2-a{opacity:.45}
+.wl2-b{background:linear-gradient(transparent 58%,var(--yellow) 58%,var(--yellow) 94%,transparent 94%);justify-self:start;padding:0 .1em}
+@media (max-width:640px){.wl2-h,.wl2-r{grid-template-columns:74px minmax(0,1fr) minmax(0,1fr);padding-left:14px;padding-right:14px}.wl2-a,.wl2-b{font-size:17px}}
+/* the bigger picture */
+.why{margin:44px 0 0;padding:28px 28px 26px;border-radius:22px;background:#F3EEF8}
+.why .lbl{margin-bottom:8px!important}
+.why-t{margin:0 0 16px!important;font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,34px);line-height:1.1;letter-spacing:-.03em}
+.why-p{margin:0 0 14px!important;font-size:16px;font-weight:300;line-height:1.5}
+.lc{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:4px 0 20px}
+.lc span{padding:7px 13px;border-radius:999px;border:2px solid var(--ink);background:#fff;font-size:13px;font-weight:600;letter-spacing:-.01em;line-height:1.2}
+.lc i{font-style:normal;font-weight:700;font-size:15px;opacity:.7}
+.why-k{margin:0!important;padding-top:16px;border-top:2px dashed var(--ink);font-family:var(--display);font-weight:700;font-size:clamp(17px,2vw,21px);line-height:1.35;letter-spacing:-.02em}
+@media (max-width:640px){.why{padding:20px 18px 18px;border-radius:16px}.lc i{display:none}.lc span{font-size:12px;padding:6px 10px}}
+.cs-cover-scroll.narrow{max-width:400px;margin-left:auto;margin-right:auto}
+.cs-cover-scroll.narrow .cs-cover{width:100%;border-radius:16px;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--pink)}
+.cs-cap{margin:12px 0 0!important;text-align:center;font-size:13.5px;font-weight:300;line-height:1.4}
+/* deck-style case study */
+.sl{margin:110px 0 0}
+.sl-k{display:flex;align-items:center;gap:12px;margin:0 0 14px!important;font-family:var(--caps);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.sl-k b{font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--pink);border:2px solid var(--ink)}
+.sl-t{margin:0 0 18px;font-family:var(--display);font-weight:800;font-size:clamp(30px,4.6vw,46px);line-height:1.06;letter-spacing:-.035em}
+@media (min-width:761px){.sl-t{white-space:nowrap}}
+.sl-s{max-width:620px}
+.sl-s p{margin:0 0 12px!important;font-size:clamp(17px,1.6vw,19px);font-weight:300;line-height:1.5}
+.sl-s em{font-style:italic;font-weight:500}
+.sl-v{margin-top:28px}
+.sl-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.sl-row .sl-v{margin-top:0}
+.sl-ph{margin:0}
+.sl-ph img{display:block;width:100%;max-width:380px;margin:0 auto;border-radius:16px;border:2px solid var(--ink);box-shadow:6px 6px 0 var(--pink)}
+.sl-ph figcaption{margin-top:12px;text-align:center;font-size:13px;font-weight:300}
+.sl .oway,.sl .why{margin:0}
+.sl .wl-wrap2{margin:0;max-width:720px}
+.sl.close{margin-top:120px;padding:44px 40px;border-radius:24px;background:var(--ink);color:#fff;box-shadow:8px 8px 0 var(--pink)}
+.sl.close .sl-k b{color:var(--ink)}
+.sl.close .sl-t{color:var(--yellow)}
+.sl.close .sl-s p{color:#fff}
+.sl.close .sl-s p:last-child{margin-bottom:0!important}
+@media (max-width:640px){.sl.close{padding:28px 22px}}
+.sl-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.sl-tiles>.wide{grid-column:1/-1;background:var(--pink)}
+.sl-tiles>.wide p{font-size:16.5px;max-width:720px}
+.sl-tiles>div{padding:22px 24px;border-radius:18px;border:2px solid var(--ink);background:var(--yellow)}
+.sl-tiles b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(20px,2.2vw,26px);letter-spacing:-.03em;line-height:1.1;margin-bottom:6px}
+.sl-tiles p{margin:0;font-size:15px;font-weight:300;line-height:1.45}
+@media (max-width:760px){.sl{margin-top:80px}.sl-row{grid-template-columns:1fr;gap:24px}.sl-tiles{grid-template-columns:1fr}}
+.uk-g{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.uk{border:2px solid var(--ink);border-radius:20px;padding:24px 26px}
+.uk.q{background:var(--yellow)}
+.uk.b{background:var(--ink);color:#fff;box-shadow:5px 5px 0 var(--pink)}
+.uk-h{margin:0 0 14px!important;font-family:var(--caps);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+.uk ul{list-style:none;margin:0;padding:0}
+.uk li{position:relative;padding:11px 0 11px 30px;font-family:var(--display);font-weight:700;font-size:clamp(17px,1.7vw,20px);letter-spacing:-.02em;line-height:1.25}
+.uk li+li{border-top:1px dashed currentColor}
+.uk li::before{content:"";position:absolute;left:0;top:15px;width:16px;height:16px;border-radius:50%;background:var(--pink);border:2px solid currentColor}
+.uk.b li::before{background:var(--yellow);border-color:#fff}
+.uk.b li+li{border-top-color:rgba(255,255,255,.35)}
+@media (max-width:640px){.uk-g{grid-template-columns:1fr}}
+.sl .uk-cap{margin:18px 0 0!important;max-width:680px;font-size:15px;font-weight:300;line-height:1.5}
+/* deck-style TEPIC (mirrors the CoP deck) */
+.ds{margin:96px 0 0}
+.ds:first-of-type{margin-top:72px}
+.ds.dark{padding:clamp(28px,4vw,48px);border-radius:24px;background:var(--ink);color:#fff;box-shadow:8px 8px 0 var(--pink)}
+.ds-k{margin:0 0 12px!important;padding-top:14px;border-top:1.5px solid currentColor;font-family:var(--caps);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+.ds-t{margin:0 0 26px;font-family:var(--display);font-weight:800;font-size:clamp(28px,3.6vw,46px);line-height:1.05;letter-spacing:-.035em}
+.ds-t.big{font-size:clamp(34px,4.6vw,56px);color:var(--yellow)}
+.ds-p{margin:0 0 18px!important;font-size:clamp(16px,1.5vw,18px);font-weight:300;line-height:1.5;max-width:560px}
+.ds-sm{margin:0!important;font-size:14px;font-weight:300;opacity:.8}
+.ds-q{margin:4px 0 18px!important;font-family:var(--display);font-weight:700;font-style:italic;font-size:clamp(20px,2.2vw,28px);letter-spacing:-.02em;line-height:1.15}
+.ds-lbl{margin:0 0 10px!important;font-family:var(--caps);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase}
+/* 01 */
+.ds-late{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:stretch}
+.ds-areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+.ds-areas li{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid rgba(78,13,134,.3);font-weight:600;font-size:15px;letter-spacing:-.01em;line-height:1.2}
+.ds-areas span{font-family:var(--caps);font-size:11px;letter-spacing:.06em;opacity:.7}
+.ds-pdp{margin:0;display:flex;align-items:center;justify-content:center;padding:28px;border-radius:18px;background:#F3EEF8}
+.ds-pdp img{display:block;width:100%;max-width:330px;border-radius:14px;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--pink)}
+/* 02 */
+.ds-old .oway{margin:0}
+.ds-wall .wl-wrap2{margin:8px 0 0}
+/* 03 */
+.ds-shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ds-shots figure{margin:0}
+.ds-shots img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;border-radius:12px;border:2px solid var(--ink);background:#fff}
+.ds-shots figcaption{display:flex;align-items:center;gap:10px;margin-top:12px;font-family:var(--display);font-weight:700;font-size:clamp(16px,1.6vw,20px);letter-spacing:-.02em}
+.ds-shots figcaption span{font-family:var(--display);font-weight:800;opacity:.45}
+.ds-bar{margin:28px 0 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding:16px 24px;border-radius:14px;background:var(--ink);color:#fff}
+.ds-bar p{margin:0!important;font-family:var(--display);font-weight:800;font-size:clamp(22px,2.6vw,32px);letter-spacing:-.03em;color:var(--yellow)}
+.ds-bar cite{font-style:normal;font-size:14px;font-weight:300}
+/* 04 */
+.ds-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.ds-card{padding:22px 20px;border:2px solid var(--ink);border-radius:18px;background:#F3EEF8}
+.ds-card.dark{background:var(--ink);color:#fff}
+.ds-card ul{list-style:none;margin:0;padding:0}
+.ds-card li{padding:13px 0;font-family:var(--display);font-weight:700;font-size:clamp(15px,1.3vw,16.5px);letter-spacing:-.02em;line-height:1.2}
+@media (min-width:761px){.ds-card li{white-space:nowrap}}
+.ds-card li+li{border-top:1px dashed currentColor}
+.ds-card.dark li{color:var(--yellow)}
+.ds-card.dark li+li{border-top-color:rgba(255,255,255,.35)}
+/* 05 */
+.ds-tl{display:grid;grid-template-columns:1fr .8fr 1fr;gap:18px;align-items:stretch}
+.ds-st{padding:20px 22px;border-top:3px solid var(--ink)}
+.ds-st.a0{border-top-style:dashed;opacity:.85}
+.ds-st.a2{border-top-width:5px}
+.ds-st.a1 .ds-lbl{color:#B5482A}
+.ds-st.a1{border-top-color:#B5482A}
+.ds-st h3{margin:0 0 14px;font-family:var(--display);font-weight:800;font-size:clamp(20px,2.2vw,26px);letter-spacing:-.025em}
+.ds-nums{display:flex;gap:16px;flex-wrap:wrap}
+.ds-nums p{margin:0!important}
+.ds-nums b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.04em;line-height:1}
+.ds-nums span{font-size:12.5px;font-weight:300}
+.ds-res{margin:16px 0 0!important;font-family:var(--display);font-weight:700;font-style:italic;font-size:18px}
+.ds-st.a1 .ds-res{color:#B5482A}
+.ds-st.a2 .ds-res{text-decoration:underline;text-decoration-color:var(--yellow);text-decoration-thickness:6px;text-underline-offset:-1px;text-decoration-skip-ink:none}
+.ds-note{margin:14px 0 0!important;font-size:13.5px;font-weight:300;line-height:1.45}
+.ds-zero{justify-content:flex-start;font-size:15px;font-weight:300}
+.ds-zero b{font-family:var(--display);font-weight:800;font-size:clamp(28px,3vw,38px);color:var(--yellow);letter-spacing:-.03em}
+/* 06 */
+.ds-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.ds-head .ds-t{margin:0}
+.ds-chips{display:flex;gap:8px;flex-wrap:wrap}
+.ds-chips span{padding:8px 14px;border-radius:999px;border:2px solid var(--ink);background:var(--yellow);font-weight:700;font-size:14px;letter-spacing:-.01em}
+.ds-chips span+span{background:var(--pink)}
+.ds-v4{margin:0}
+.ds-v4 img{display:block;width:100%;border-radius:14px;border:2px solid var(--ink)}
+.ds-stat{margin:-8px 0 26px!important;font-size:clamp(16px,1.6vw,19px);font-weight:300}
+.ds-stat b{font-family:var(--display);font-weight:800;letter-spacing:-.02em}
+.ds-stat span{margin:0 12px;opacity:.5}
+.ds-ba{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.5fr);gap:24px;align-items:start}
+.ds-ba figure{margin:0}
+.ds-ba img{display:block;width:100%;border-radius:12px;border:2px solid var(--ink);background:#fff}
+.ds-ba .af img{box-shadow:6px 6px 0 var(--pink)}
+.ds-ba .b4 img{filter:saturate(.85)}
+.ds-ba figcaption{margin-top:10px;font-size:13.5px;font-weight:300;line-height:1.4}
+.ds-ba .b4 figcaption{opacity:.75}
+@media (max-width:760px){.ds-ba{grid-template-columns:1fr}.ds-stat span{display:block;height:0;overflow:hidden;margin:0}}
+/* 07 */
+.ds-next{display:block}
+.ds-next .ds-p{color:#fff}
+.ds-road{list-style:none;margin:0;padding:0}
+.ds-road li{padding:14px 0;border-top:1px solid rgba(255,255,255,.35);font-family:var(--display);font-weight:700;font-size:clamp(17px,1.8vw,22px);letter-spacing:-.02em}
+.ds-road li:last-child{border-bottom:1px solid rgba(255,255,255,.35)}
+.ds-road span{display:block;font-family:var(--caps);font-weight:400;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--pink);margin-bottom:4px}
+@media (max-width:760px){
+.ds{margin-top:72px}
+.ds-late,.ds-next,.ds-two,.ds-tl,.ds-shots{grid-template-columns:1fr}
+.ds-pdp{padding:18px}
+.ds-areas{grid-template-columns:1fr 1fr}
+.ds-areas li{font-size:13.5px}
+}
+/* before / after */
+.ba{margin:0 0 22px;display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1.25fr);align-items:start}
+.ba .rz-arr{align-self:center}
+.ba-c .rz-l{margin-bottom:8px!important}
+.ba-c img{display:block;width:100%;border-radius:12px;border:2px solid var(--ink);background:#fff}
+.ba-c.b4 img{filter:saturate(.85);opacity:.9}
+.ba-c.af img{box-shadow:5px 5px 0 var(--pink)}
+.ba-cap{margin:10px 0 0!important;font-size:13.5px;font-weight:300;line-height:1.4}
+.ba-c.b4 .ba-cap{opacity:.75}
+@media (max-width:640px){.ba{grid-template-columns:1fr;gap:8px}.ba .rz-arr{transform:rotate(90deg)}}
+/* TEPIC Flash today */
+.tf-shot{margin:0 0 20px!important}
+.tf-pts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:0}
+.tf-pts>div{padding:14px 16px;border-radius:14px;background:#F3EEF8}
+.tf-pts b{display:block;font-weight:700;font-size:15px;letter-spacing:-.02em;margin-bottom:4px}
+.tf-pts p{margin:0;font-size:13.5px;font-weight:300;line-height:1.4}
+.tf-cmp{margin:0;padding:22px 26px;border-radius:18px;border:2px solid var(--ink);background:#fff;box-shadow:5px 5px 0 var(--pink)}
+.tf-row span.af{background:linear-gradient(transparent 58%,var(--yellow) 58%,var(--yellow) 94%,transparent 94%);padding:0 .1em;justify-self:start}
+.tf-cols,.tf-row{display:grid;grid-template-columns:minmax(0,1fr) 36px minmax(0,1fr);align-items:center}
+.tf-cols .rz-l:last-child{grid-column:3}
+.tf-row{padding:8px 0}
+.tf-row+.tf-row{border-top:1px dashed rgba(78,13,134,.4)}
+.tf-row span.b4,.tf-row span.af{font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,36px);letter-spacing:-.03em;line-height:1}
+.tf-row span.b4{opacity:.5;text-decoration:line-through;text-decoration-thickness:3px}
+.tf-f{margin:16px 0 0!important;padding-top:14px;border-top:2px dashed var(--ink);font-size:14px;font-weight:600;line-height:1.4}
+@media (max-width:760px){.tf-pts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.tf-pts{grid-template-columns:1fr}.tf-cmp{padding:18px}}
 .sv b{order:-1;margin:0 0 10px;min-height:1.3em}
 @media (max-width:640px){.sv b{font-size:13px!important;line-height:1.2;min-height:2.4em;display:flex;align-items:flex-end;justify-content:center;margin-bottom:6px}}
 .sv>span:last-child{margin-top:6px}
@@ -980,8 +1197,8 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
   var C={pink:'var(--pink)',blue:'var(--blue)',purple:'var(--purple)',yellow:'var(--yellow)',green:'var(--green)'};
   var P=[
     {id:'passport',title:'Digital Product Passport',tag:'Consumer · Product owner',color:'pink',img:'dpp-cover-v2.jpg',csImg:'dpp-hero4.jpg',imgAlt:'A patchwork Coachtopia shoulder bag next to four phone screens: the owner’s collection, the product certificate, a Poshmark resale prompt, and a pre-filled Poshmark listing',
-     line:'Every Coachtopia bag has a digital passport. I turned it into services people use, from one-tap resale to a second life on Depop.',
-     tldr:'Every Coachtopia product has a digital passport, opened by tapping its embedded NFC tag. It shows what the bag is made of, where it was made and its environmental impact, and unlocks services like resale, repair and takeback.',
+     line:'Every Coachtopia bag has a digital passport. I made it useful after purchase, starting with one-tap resale and recording product provenance when selling through Depop.',
+     tldr:'Every Coachtopia bag has a digital passport. I made it useful after purchase, starting with one-tap resale and recording product provenance when selling through Depop.',
      meta:[['Role','Product manager'],['Company','Coachtopia'],['Timeline','2024 – now'],['Partners','EON, Poshmark, Depop']],
      
      pl:['The shift','Our bet'],
@@ -1019,21 +1236,27 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
      moves:[['Started from my own habits','Wrote about the hours I spend on an app I can’t even buy from, and what that says about pre-intent shopping.'],
             ['Designed and built it','Took it from idea to a working web app myself, end to end.'],
             ['Shared it in public','Wrote up the build, rough edges and all, on Soft Launch in “A Wishlist App That Doesn’t Suck.”']]},
-    {id:'tepic',title:'TEPIC Flash',tag:'AI · 0→1',color:'yellow',img:'tepic-cover-v3.jpg',csImg:'tepic-impact2.png',csWide:true,csAlt:'The Environmental Impact module on a Coachtopia product page: waste diverted, recycled materials, carbon reduction and CO2e created',imgAlt:'Before and after: the T-EPIC Excel tool, about 3 weeks and 9 steps per drop, next to the TEPIC Flash dashboard, about 3 days and 5 steps',
-     line:'I built an AI tool that cuts a drop’s environmental impact calculation from about 3 weeks to about 3 days, and shows the working behind every number.',
-     tldr:'I built an AI tool that cuts a drop’s environmental impact calculation from about 3 weeks to about 3 days, and shows the working behind every number.',
+    {id:'tepic',title:'TEPIC Flash',tag:'AI · 0→1',color:'yellow',img:'tepic-cover-v3.jpg',csCap:'The Environmental Impact section on every Coachtopia product page.',csAlt:'The Environmental Impact section of a Coachtopia product page on mobile: waste diverted, recycled materials, carbon reduction and CO2e created',imgAlt:'Before and after: the T-EPIC Excel tool, about 3 weeks and 10 steps per drop, next to the TEPIC Flash dashboard, about 3 days and 3 steps',
+     line:'I built a tool using AI that could change how the fashion industry measures impact. Product-level impact calculations took months. Now they take a few days.',
+     tldr:'I built an AI tool that Tapestry is releasing to the industry, to make rigorous environmental impact calculations a standard and change how fashion makes products.',deck:'tepicDeck',
      meta:[['Role','Product manager'],['Company','Tapestry'],['Timeline','May 2026 – now'],['Partners','Tapestry ESG, WSP']],
-     ctx0:'T-EPIC is Tapestry’s environmental impact calculator, built with WSP. It estimates each product’s carbon and waste footprint from its bill of materials.',
-     ctxLbl:'What I noticed',
-     ctx:'<b>Impact numbers for the site often arrived after products had already gone live.</b> When I met with the ESG team to understand why, I found how complex the calculations were: even a small drop took about 3 weeks.',
-     did:[['Mapped the real workflow','I shadowed our ESG analyst through a full drop. The bottleneck was <mark class="kp">repetitive data collection and prep</mark>.'],
-          ['Prototyped the ideal workflow','I used Claude Code to <mark class="kp">rapidly draft a prototype</mark> of what the workflow could look like to get stakeholder buy-in. It landed well, lining up with Tapestry’s <mark class="kp">goal of scaling this calculation</mark> company-wide and sharing the tool openly with the industry.'],
-          ['Understood the tool','I gathered the T-EPIC tool, the data prep sheets and every data source, and learned how the calculations work so I could prompt Claude with <mark class="kp">clear guidelines</mark>.'],
-          ['Rebuilt it with AI','I fed Claude the methodology and resources to reverse-engineer the system, then <mark class="kp">validated it against the original T-EPIC tool, making sure every official figure matched exactly</mark>.'],
-          ['Designed for the analyst','Once the numbers held, I <mark class="kp">refined the interface</mark> and added the features the analyst needed most.']],
-     vizLbl:'The result',
+     
+     ctxLbl:'The problem',
+     ctx:'<b>The numbers were always late.</b> Part of my job was uploading these figures to our product pages, and they kept arriving after products had launched. When I asked the ESG team why, the answer was: it’s complicated. Even after they hired an analyst to bring the work in-house from outside consultants, a drop of about 15 products still took three weeks. So I took her to coffee and asked her to walk me through it, step by step.',
+     afterCtx:'oldway',
+     did:[['Sketched the experience before I knew the tools','With the analyst, I prototyped what it should feel like: <mark class="kp">drop in a BOM, get the answer, click in to see how</mark>. The ESG team approved it on the spot.'],
+          ['Learned the system','I gathered the T-EPIC workbook, the data prep sheets and every data source, and learned how the calculation works, so I could tell Claude <mark class="kp">what correct looks like</mark> and check it.'],
+          ['Rebuilt it, twice','My first attempt was close but never right, and no amount of iterating told me why. I put it down for about a month, and in that time learned more about how <mark class="kp">AI evals</mark> work, how AI systems behave, and how T-EPIC itself actually calculates. With that, and a newer model, the second attempt took two days.'],
+          ['Designed for trust','Analysts sign off on public claims, so <mark class="kp">every number shows its working</mark>. Unknown values show as missing, never as a plausible-looking number. Exports use live Excel formulas anyone can check.'],
+          ['Turned carbon into a design variable','Most of a product’s impact is locked in by the end of design. I added what-if scenarios so <mark class="kp">product development can see the carbon cost of a choice before the product is made</mark>.']],
+     didVizs:{0:'protoSteps',2:'wall'},
+     vizLbl:'TEPIC Flash today',
      viz:'tepicFlow',
-     next:[['Now · Pilot','Run a real drop through TEPIC Flash and T-EPIC side by side to validate results and confirm the ~3-day estimate.','','Time per drop, and results matching T-EPIC'],['Next · Hand off','Validate with WSP, export results straight to the product information system, and train the ESG team to own the tool.','','Matching results on every new drop'],['Phase 2 · Automate','Pull data automatically from supplier, materials and product systems, with gaps filled in the tool feeding back to the source.','','Share of data complete on first upload'],['Scale','Release it openly, so other brands can calculate impact as rigorously as T-EPIC.','','Adoption outside Tapestry']]},
+     impactLbl:'What it unlocked for the team',
+     impactNote:[['Time back','The analyst spends her time analyzing results instead of collecting data and running calculations.'],['Carbon as a design input','Product development can see the impact of a material or factory choice before a product is made.'],['Built to scale','Nothing Coachtopia-specific is hard-coded, so the same engine can run for any Tapestry brand.'],['Managed in-house','The team can maintain and update the tool itself, instead of paying consultants six figures a year to run and oversee the calculations.']],
+     afterImpact:'tepicWhy',
+     
+     },
     {id:'international',title:'International Strategy',tag:'Consumer · Data',color:'blue',wip:true,noCover:true,img:'intl-cover.jpg',imgAlt:'An illustrated Tokyo shopping street, with crosswalks and storefronts under a bright summer sky',
      line:'Rethinking what Coach’s site should do in Japan, based on how shoppers there actually buy.',
      tldr:'Tapestry is growing its business outside North America. I’m rethinking what Coach’s site should do in Japan, based on how shoppers there actually buy.',
@@ -1177,15 +1400,17 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
       if(p.wip)h+='<p class="wip-tag">Currently working on</p>';
       h+='<p class="cs-tldr">'+p.tldr+'</p>';
       h+='<dl class="facts">'+p.meta.map(function(m){return '<div><dt>'+m[0]+'</dt><dd>'+m[1]+'</dd></div>'}).join('')+'</dl>';
-      if(p.noCover){}else if(p.csImg)h+='<div class="cs-cover-scroll'+(p.csWide?' wide':'')+'"><img class="cs-cover" src="'+p.csImg+'" alt="'+(p.csAlt||'A patchwork Coachtopia shoulder bag beside a phone showing its digital product certificate')+'"></div>';else if(p.img)h+='<img class="cs-cover" src="'+p.img+'" alt="'+p.imgAlt+'">';
+      if(p.deck&&VIZ[p.deck]){h+=VIZ[p.deck]();}else{
+      if(p.noCover){}else if(p.csImg)h+='<div class="cs-cover-scroll'+(p.csWide?' wide':'')+(p.csNarrow?' narrow':'')+'"><img class="cs-cover" src="'+p.csImg+'" alt="'+(p.csAlt||'A patchwork Coachtopia shoulder bag beside a phone showing its digital product certificate')+'">'+(p.csCap?'<p class="cs-cap">'+p.csCap+'</p>':'')+'</div>';else if(p.img)h+='<img class="cs-cover" src="'+p.img+'" alt="'+p.imgAlt+'">';
       if(p.stats)h+='<div class="stats" style="--tint:'+C2[p.color]+'">'+p.stats.map(function(x){return '<div><b>'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join('')+'</div>';
       var CH=p.chapters;
       function chap(k){return '<div class="chap"><p class="chap-n">'+('0'+(k+1))+'</p><h2 class="chap-t">'+CH[k][0]+'</h2>'+(CH[k][1]?'<p class="chap-i">'+CH[k][1]+'</p>':'')+'</div>'}
       if(CH)h+=chap(0);
       var pl=p.pl||['The problem','The insight'];
       if(p.ctx)h+='<div class="ctx">'+(p.ctx0?'<p class="lbl">Context</p><p class="ctx-p">'+p.ctx0+'</p>'+(p.ctxImgs?'<div class="ctx-imgs">'+p.ctxImgs.map(function(x){return '<figure><img src="'+x[0]+'" alt="'+x[2]+'" loading="lazy"><figcaption>'+x[1]+'</figcaption></figure>'}).join('')+'</div>':'')+'<p class="lbl ctx-l2">'+(p.ctxLbl||'Context')+'</p>':'<p class="lbl">'+(p.ctxLbl||'Context')+'</p>')+'<p>'+p.ctx+'</p></div>';
+      if(p.afterCtx&&VIZ[p.afterCtx])h+=VIZ[p.afterCtx]();
       if(p.impactNote&&p.roiFirst)h+='<div class="inote" style="--tint:'+C2[p.color]+'"><p class="lbl">'+(p.impactLbl||'Impact so far')+'</p><div class="inote-g n'+p.impactNote.length+'">'+p.impactNote.map(function(x){return '<div><b>'+x[0]+'</b><p>'+x[1]+'</p></div>'}).join('')+'</div></div>';
-      if(p.did)h+='<p class="lbl sec-lbl">What I did</p><ol class="did">'+p.did.map(function(x,k){return '<li><span class="did-n">'+(k+1)+'</span><div><b>'+x[0]+'</b><p>'+x[1]+'</p></div></li>'+(p.didViz&&k===p.didVizAt?'<li class="did-viz">'+VIZ[p.didViz]()+'</li>':'')}).join('')+'</ol>';
+      if(p.did)h+='<p class="lbl sec-lbl">What I did</p><ol class="did">'+p.did.map(function(x,k){return '<li><span class="did-n">'+(k+1)+'</span><div><b>'+x[0]+'</b><p>'+x[1]+'</p></div></li>'+(p.didViz&&k===p.didVizAt?'<li class="did-viz">'+VIZ[p.didViz]()+'</li>':'')+(p.didVizs&&p.didVizs[k]&&VIZ[p.didVizs[k]]?'<li class="did-viz">'+VIZ[p.didVizs[k]]()+'</li>':'')}).join('')+'</ol>';
       if(p.ps)h+='<div class="proj-ps">'+ftBody({ps:p.ps,pl:p.pl})+'</div>';
       if(!p.ps&&p.problem)h+='<div class="pi"><div><p class="lbl">'+pl[0]+'</p><p>'+p.problem+'</p></div><div class="ins"><p class="lbl">'+pl[1]+'</p><p>'+p.insight+'</p></div></div>';
       if(p.origin)h+='<p class="origin"><span aria-hidden="true">✦</span>'+p.origin+'</p>';
@@ -1200,6 +1425,8 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
       if(p.viz&&VIZ[p.viz])h+=(p.vizLbl?'<p class="lbl sec-lbl viz-lbl">'+p.vizLbl+'</p>':'')+VIZ[p.viz]();
       if(p.shot)h+='<figure class="shot"><img src="'+p.shot[0]+'" alt="'+p.shot[1]+'" loading="lazy"></figure>';
       if(p.impactNote&&!p.roiFirst)h+='<div class="inote" style="--tint:'+C2[p.color]+'"><p class="lbl">'+(p.impactLbl||'Impact so far')+'</p><div class="inote-g n'+p.impactNote.length+'">'+p.impactNote.map(function(x){return '<div><b>'+x[0]+'</b><p>'+x[1]+'</p></div>'}).join('')+'</div></div>';
+      if(p.afterImpact&&VIZ[p.afterImpact])h+=VIZ[p.afterImpact]();
+      }
       if(p.impact)h+='<div class="impact"><p class="lbl">Impact</p><div class="imp-row">'+p.impact.map(function(x){return '<div><b class="cnt'+(x[0].length>6?' long':'')+'" data-v="'+x[0]+'">'+x[0]+'</b><span>'+x[1]+'</span></div>'}).join('')+'</div></div>';
       if(p.next&&p.next.map)h+='<div class="wig"><p class="lbl">Where it’s going</p>'+(p.nextNote?'<p class="wig-n">'+p.nextNote+'</p>':'')+'<ol class="road">'+p.next.map(function(x,k){return '<li><i aria-hidden="true"></i><span class="road-s">'+x[0]+'</span><p>'+x[1]+'</p>'+(x[2]?'<p class="hyp"><span>Hypothesis</span>'+x[2]+'</p>':'')+(x[3]?'<p class="kpi"><span>Measure</span>'+x[3]+'</p>':'')+'</li>'}).join('')+'</ol></div>';
       if(p.lesson)h+='<p class="lesson"><span class="lbl">What I learned</span>'+p.lesson+'</p>';
@@ -1288,11 +1515,64 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
         vf('Repair',[['start','Comes in','A customer’s bag'],['via','Request and assessment'],['br',['Repaired','Returned, unrepairable']],['sh','Shipped back']])+
         '</div><p class="fl2-note">Every step after a bag comes in is logged to its passport.</p></div>';
     },
+    oldway:function(d){
+      var S={plm:['PLM','#E3E8F4','#2C3E66'],dt:['Data tool','#F4E9DA','#6A4A1E'],higg:['Higg MSI','#E6EFE0','#3F4A2C'],tep:['T-EPIC','#F3E0DB','#8A3520'],res:['Results','#EAE4F1','#4E3A6B'],pim:['PIM','#DDEDEC','#1F5452']};
+      var st=[['plm','Download each SKU’s BOM','A PLM export of one product’s bill of materials'],
+              ['dt','Paste every BOM in by hand','A BOM pasted into the data collection workbook’s input tab'],
+              ['dt','Cross-check for new materials','The data collection workbook flagging material codes not found in history'],
+              ['plm','Chase new material data','Material and weight data for a style in the PLM, with the fields that are often missing'],
+              ['higg','Score each new material','The Higg MSI materials database scoring one material'],
+              ['tep','Map data across 22 tabs','The T-EPIC Excel tool’s inputs tab with materials mapped for one SKU'],
+              ['tep','Run one SKU at a time','A T-EPIC results page with emissions by stage against the baseline'],
+              ['res','Consolidate into a summary sheet','A results workbook with one column per product'],
+              ['pim','Download the upload file','The product information system’s export dialog'],
+              ['pim','Fill in every score and upload','The upload spreadsheet with impact scores typed in for each SKU']];
+      var rot=[-1.2,.8,-.6,1.4,-1,.9,-1.5,.6,-.8,1.2];
+      return '<figure class="oway">'+(d?'':'<figcaption class="ow-h"><p class="lbl">The old way, for every drop</p><p class="ow-t">The math wasn’t the bottleneck. The data was.</p></figcaption>')+'<ol class="ow-g">'+st.map(function(x,k){var s=S[x[0]];return '<li class="ow-c" style="--r:'+rot[k]+'deg"><img src="tp-old-'+('0'+(k+1)).slice(-2)+'.jpg" alt="'+x[2]+'" loading="lazy"><span class="ow-m"><b>'+(k+1)+'</b><i style="background:'+s[1]+';color:'+s[2]+'">'+s[0]+'</i></span><p>'+x[1]+'</p></li>'}).join('')+'</ol><p class="ow-bar"><span>10 manual steps</span><span>6 systems</span><span>1 SKU at a time</span><span class="hot">Up to 3 weeks per drop</span></p></figure>';
+    },
+    protoSteps:function(d){
+      var st=[['tp-proto-1.jpg','Upload the drop','Materials are checked against the reference data as soon as the file lands.','The first prototype’s upload screen, with a validation summary of materials that are ready or missing data'],
+              ['tp-proto-2.jpg','Get the answer','Every product in the drop, with its four impact figures, in one table.','The prototype’s products summary table with CO2e, waste diverted, carbon reduction and recycled material per SKU'],
+              ['tp-proto-3.jpg','Click in to see how','Each number breaks down by lifecycle stage against the virgin baseline.','A product detail modal showing this product’s impact tiles and an emissions comparison chart']];
+      return '<figure class="pst">'+(d?'':'<p class="lbl">The first prototype, in three screens</p>')+'<div class="pst-g">'+st.map(function(x,k){return '<div class="pst-c"><img src="'+x[0]+'" alt="'+x[3]+'" loading="lazy"><b><span class="did-n">'+(k+1)+'</span>'+x[1]+'</b><p>'+x[2]+'</p></div>'}).join('')+'</div><p class="pst-q">“Yes. We need this.” <span>The Head of ESG, on seeing it, who then offered to sponsor the build.</span></p></figure>';
+    },
+    wall:function(){
+      var rows=[['Time','~7 weeks','2 days'],['Tokens','48M','20M'],['Accuracy','Close, never right','13 of 13 exact'],['Code kept','0%','All of it']];
+      return '<figure class="wl-wrap2"><div class="wl2-h"><span></span><p class="rz-l">Attempt one</p><p class="rz-l af">Attempt two</p></div>'+rows.map(function(r){return '<div class="wl2-r"><span class="wl2-l">'+r[0]+'</span><span class="wl2-a">'+r[1]+'</span><span class="wl2-b">'+r[2]+'</span></div>'}).join('')+'</figure>';
+    },
+    tepicDeck:function(){
+      function K(n,k){return '<p class="ds-k">'+n+' · '+k+'</p>'}
+      function S(cls,inner){return '<section class="ds '+cls+'">'+inner+'</section>'}
+      var areas=['Materials &amp; packaging','Production','Transportation','Distribution &amp; retail','Use','End of life'];
+      var shots=[['tp-proto-1.jpg','Upload the drop','The prototype’s upload screen, with a validation summary of materials that are ready or missing data'],['tp-proto-2.jpg','Get the answer','The prototype’s products summary table with four impact figures per product'],['tp-proto-3.jpg','Click in to see how','A product detail view breaking one product’s impact down by lifecycle stage']];
+      var quick=['Time back for the analyst','Scale across Tapestry','Informed design choices before production','No more consultant fees'],big=['Demonstrate leadership','Build credibility','Accelerate industry progress','Support education and research'];
+      function list(a){return '<ul>'+a.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
+      return S('ds-late',
+          '<div class="ds-col">'+K('01','The problem')+'<h2 class="ds-t">The numbers were<br>always late.</h2><p class="ds-p">I uploaded these figures to Coachtopia’s product pages, and they kept landing after launch.</p><div class="ds-why"><p class="ds-sm">When I asked why:</p><p class="ds-q">“It’s complicated.” It spans six areas.</p></div><ol class="ds-areas">'+areas.map(function(x,k){return '<li><span>0'+(k+1)+'</span>'+x+'</li>'}).join('')+'</ol></div>'+
+          '<figure class="ds-pdp"><img src="tp-pdp.jpg" alt="The Environmental Impact section of a Coachtopia product page on mobile: waste diverted, recycled materials, carbon reduction and CO2e created" loading="lazy"></figure>')+
+        S('ds-old',K('02','The workflow')+'<h2 class="ds-t">The math wasn’t the bottleneck.<br>The data was.</h2>'+VIZ.oldway(1))+
+        S('ds-proto',K('03','The prototype')+'<h2 class="ds-t">Upload one file.<br>Calculate the whole drop instantly.</h2><div class="ds-shots">'+shots.map(function(x,k){return '<figure><img src="'+x[0]+'" alt="'+x[2]+'" loading="lazy"><figcaption><span>'+(k+1)+'</span>'+x[1]+'</figcaption></figure>'}).join('')+'</div><blockquote class="ds-bar"><p>“Yes. We need this.”</p><cite>Head of ESG, on seeing the prototype</cite></blockquote>')+
+        S('ds-unlock',K('04','The stakes')+'<h2 class="ds-t">Then I learned what<br>the numbers were really for.</h2><div class="ds-two"><div class="ds-card"><p class="ds-lbl">Quick wins</p>'+list(quick)+'</div><div class="ds-card dark"><p class="ds-lbl">Strategic value</p>'+list(big)+'</div></div>')+
+        S('ds-wall',K('05','The build')+'<h2 class="ds-t">Close was never right.</h2><p class="ds-p">My first attempt was close but never right, and no amount of iterating told me why. I put it down for about a month, and in that time <mark class="kp">learned more about AI evals and how AI systems behave</mark>, and how T-EPIC itself calculates. With that, and a newer model, the second attempt took two days.</p>'+VIZ.wall())+
+        S('ds-flash','<div class="ds-head">'+'<div>'+K('06','The result')+'<h2 class="ds-t">3 weeks to 3 days.<br>Six figures a year saved.</h2></div></div><div class="ds-ba"><figure class="b4"><p class="ds-lbl">Before · T-EPIC in Excel</p><img src="tp-old-07.jpg" alt="A T-EPIC Excel results sheet for one SKU, with emissions by lifecycle stage against the baseline"><figcaption>One SKU at a time, across workbooks of up to 61 tabs.</figcaption></figure><figure class="af"><p class="ds-lbl">After · TEPIC Flash</p><img src="tp-v4.jpg" alt="The TEPIC Flash overview: average carbon reduction, CO2e avoided, footprint per product, carbon reduction by drop, where emissions come from, and material hotspots"><figcaption>The whole drop, the moment the file is uploaded.</figcaption></figure></div>')+
+        S('ds-next dark','<div class="ds-col"><p class="ds-k">What’s next</p><h2 class="ds-t big">Now, the whole industry.</h2><p class="ds-p">I’m continuing to build an open version of the tool that any brand can run on its own data, so rigorous impact numbers can be the norm, not the exception.</p></div>');
+    },
+    tepicWhy:function(d){
+      var lc=['Materials and packaging','Production','Transport','Distribution and retail','Use, down to how often it’s washed','End of life'];
+      return '<div class="why">'+(d?'':'<p class="lbl">The bigger picture</p><p class="why-t">Most sustainability numbers are estimates. These aren’t.</p>')+
+        '<p class="why-p">Sustainability is a contested space. Leather is unethical to some and the most durable option to others. Most impact figures you see online rest on broad assumptions and category averages, because measuring the real thing is hard. T-EPIC measures the real thing, with real data at every stage of a product’s life.</p>'+
+        '<div class="lc">'+lc.map(function(x){return '<span>'+x+'</span>'}).join('<i aria-hidden="true">→</i>')+'</div>'+
+        '<p class="why-p">Outside Tapestry, a calculation like this can take months. So the ESG team’s long-term goal, making it an industry standard, felt far off. We couldn’t scale it inside one company, let alone ask others to add it to their workflows.</p>'+
+        '<p class="why-k">After TEPIC Flash, that goal moved from someday to now. The team has started on the publication and an open release of the tool, and I’m building the version other companies will run on their own data.</p></div>';
+    },
     tepicFlow:function(){
-      var before=['Download each BOM','Paste into the data tool','Find new materials','Chase factories for weights','Score materials in Higg','Map 22 tabs, one SKU at a time','Save each result','Build the upload sheet'];
-      var after=['Upload every BOM at once','Fill the gaps the tool flags','Calculate, analyze and export the whole drop'];
-      function col(cls,lbl,time,sub,items,foot){return '<div class="rz '+cls+'"><p class="rz-l">'+lbl+'</p><p class="rz-t">'+time+'</p><p class="rz-s">'+sub+'</p><ol>'+items.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ol>'+(foot?'<p class="rz-f">✓ '+foot+'</p>':'')+'</div>'}
-      return '<figure class="rz-wrap">'+col('b4','Before','~3 weeks','per drop · 8 manual steps',before)+'<span class="rz-arr" aria-hidden="true">→</span>'+col('af','TEPIC Flash','~3 days','per drop, projected · 3 steps',after,'Validated against T-EPIC: every figure matched exactly.')+'</figure>';
+      var pts=[['Upload a whole drop','One file for every product in the drop. No more one at a time.'],
+               ['Fix gaps before you calculate','Missing materials are flagged up front, with a ready-made request to product development.'],
+               ['Every number shows its working','Each input names the sheet and column it came from, and every figure rebuilds itself from its own record.'],
+               ['What-if before a product is made','Change a weight, material or factory and watch every lifecycle stage move.']];
+      var cmp=[['10 steps','3'],['6 systems','1 upload'],['~3 weeks','~3 days']];
+      return '<figure class="ba"><div class="ba-c b4"><p class="rz-l">Before · T-EPIC in Excel</p><img src="tp-old-07.jpg" alt="A T-EPIC Excel results sheet for one SKU, with emissions by lifecycle stage against the baseline" loading="lazy"><p class="ba-cap">One SKU’s results, after 22 tabs of manual mapping.</p></div><span class="rz-arr" aria-hidden="true">→</span><div class="ba-c af"><p class="rz-l">After · TEPIC Flash</p><img src="tp-v4.jpg" alt="The TEPIC Flash overview screen: average carbon reduction, CO2e avoided, footprint per product, carbon reduction by drop, where emissions come from, and material hotspots" loading="lazy"><p class="ba-cap">The whole drop, the moment the file is uploaded.</p></div></figure>'+
+        '<div class="tf-pts">'+pts.map(function(x){return '<div><b>'+x[0]+'</b><p>'+x[1]+'</p></div>'}).join('')+'</div>';
     },
     margoFlow:function(){
       var before=[['Search the spreadsheet by color name',''],['Mock up designs in Illustrator',''],['Product development checks material in Excel by hand',''],['Back-and-forth on scrap rules',''],['Rework when the brief changes','']];
@@ -1500,5 +1780,3 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
   });
 })();
 </script>
-
-</html>
