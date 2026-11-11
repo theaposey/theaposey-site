@@ -1009,6 +1009,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
 .ds-late{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:stretch}
 .ds-areas{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
 .ds-areas li{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid rgba(78,13,134,.3);font-weight:600;font-size:15px;letter-spacing:-.01em;line-height:1.2}
+.ds-areas-k{margin:6px 0 4px!important;opacity:.75}
 .ds-areas span{font-family:var(--caps);font-size:11px;letter-spacing:.06em;opacity:.7}
 .ds-pdp{margin:0;display:flex;align-items:center;justify-content:center;padding:28px;border-radius:18px;background:#F3EEF8}
 .ds-pdp img{display:block;width:100%;max-width:330px;border-radius:14px;border:2px solid var(--ink);box-shadow:5px 5px 0 var(--pink)}
@@ -1548,7 +1549,7 @@ body.at-hero .hdr .wm-s{opacity:0;transform:translateY(-6px);pointer-events:none
       var quick=['Time back for the analyst','Scale across Tapestry','Informed design choices before production','No more consultant fees'],big=['Demonstrate leadership','Build credibility','Accelerate industry progress','Support education and research'];
       function list(a){return '<ul>'+a.map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul>'}
       return S('ds-late',
-          '<div class="ds-col">'+K('01','The problem')+'<h2 class="ds-t">The numbers were<br>always late.</h2><p class="ds-p">I uploaded these figures to Coachtopia’s product pages, and they kept landing after launch.</p><div class="ds-why"><p class="ds-sm">When I asked why:</p><p class="ds-q">“It’s complicated.” It spans six areas.</p></div><ol class="ds-areas">'+areas.map(function(x,k){return '<li><span>0'+(k+1)+'</span>'+x+'</li>'}).join('')+'</ol></div>'+
+          '<div class="ds-col">'+K('01','The problem')+'<h2 class="ds-t">The numbers were<br>always late.</h2><p class="ds-p">I uploaded Coachtopia’s product impact figures to our product pages, but they often came to me late, after the product was already live.</p><div class="ds-why"><p class="ds-sm">When I asked why:</p><p class="ds-q">“It’s complicated.”</p></div><p class="ds-lbl ds-areas-k">Calculations span data collected across six areas</p><ol class="ds-areas">'+areas.map(function(x,k){return '<li><span>0'+(k+1)+'</span>'+x+'</li>'}).join('')+'</ol></div>'+
           '<figure class="ds-pdp"><img src="tp-pdp.jpg" alt="The Environmental Impact section of a Coachtopia product page on mobile: waste diverted, recycled materials, carbon reduction and CO2e created" loading="lazy"></figure>')+
         S('ds-old',K('02','The workflow')+'<h2 class="ds-t">The math wasn’t the bottleneck.<br>The data was.</h2>'+VIZ.oldway(1))+
         S('ds-proto',K('03','The prototype')+'<h2 class="ds-t">Upload one file.<br>Calculate the whole drop instantly.</h2><div class="ds-shots">'+shots.map(function(x,k){return '<figure><img src="'+x[0]+'" alt="'+x[2]+'" loading="lazy"><figcaption><span>'+(k+1)+'</span>'+x[1]+'</figcaption></figure>'}).join('')+'</div><blockquote class="ds-bar"><p>“Yes. We need this.”</p><cite>Head of ESG, on seeing the prototype</cite></blockquote>')+
